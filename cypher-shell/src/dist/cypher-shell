@@ -78,7 +78,7 @@ build_classpath() {
   
   # Check if FreeBSD system, then set to directory according to port
   if [[ "$OSTYPE" == "FreeBSD"* ]]; then
-        APP_HOME="/usr/local/neo4j/libexec/tools"
+        APP_HOME="${NEO4J_HOME}/libexec/tools"
         JARPATH="$(find "${APP_HOME}" -name "cypher-shell.jar" )"
   fi
 
